@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Coffee 3D</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header" id="home1">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Coffee</a>
+                </div>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Works</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <div class="home__img">
+                        <img src="assets/img/img1.png" alt="" data-speed="-2" class="move">
+                        <img src="assets/img/img2.png" alt="" data-speed="2" class="move">
+                        <img src="assets/img/img3.png" alt="" data-speed="2" class="move">
+                        <img src="assets/img/img4.png" alt="" data-speed="-2" class="move">
+                        <img src="assets/img/img5.png" alt="" data-speed="-2" class="move">
+                        <img src="assets/img/img6.png" alt="" data-speed="2" class="move">
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Coffee<br> Drink 3D</h1>
+                        <p class="home__description">Let's help discover the best coffee drink <br> of the week.</p>
+                        <a href="#" class="home__button">Get Started</a>
+                    </div>
+                </div>
+            </section>
+
+             <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about2.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">About Us</h2>
+                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
+                    </div>                                   
+                </div>
+            </section>
+            <!--=====Slider=======-->
+            <div class="slider">
+
+                <h2 class="section-title"> Slider </h2>
+                <div class='flex-wrapper'>
+                    <div class="slider-wrapper">
+                        <div class="slide active ibg">
+                            <img src="assets/img/content-1.jpg" alt="">
+                        </div>
+                        <div class="slide ibg">
+                            <img src="assets/img/content-2.jpg" alt="">
+                        </div>
+                        <div class="slide ibg">
+                            <img src="assets/img/content-3.jpg" alt="">
+                        </div>
+                        <div class="slide  ibg">
+                            <img src="assets/img/content-4.jpg" alt="">
+                        </div>
+                        <div id="btn-prev" onclick="stopSlid()"></div>
+                        <div id="btn-next" onclick="stopSlid()"></div>
+                    </div>
+    
+                </div>
+                <div class="dots-wrapper">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+              <!--===== WORK =====-->
+              <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container  bd-grid">
+                    <div class="work__img ibg">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </div>
+                    <div class="work__img ibg">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </div>
+                    <div class="work__img ibg">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </div>
+                    <div class="work__img ibg">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </div>
+                    <div class="work__img ibg">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </div>
+                    <div class="work__img ibg">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Enviar" class="contact__button button home__button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title" href="#home1">Coffee</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p>&#169; 2020 copyright all right reserved</p>
+        </footer>
+
+        </main>
+
+         <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        
+        <!--===== GSAP =====-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
